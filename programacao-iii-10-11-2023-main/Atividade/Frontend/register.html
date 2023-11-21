@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <form id="client-form" onsubmit="postUser(); return false;">
+    <div class="msg"></div>
+    <div class="h1-text">
+        <h1></i>Faça seu cadastro</h1>
+    </div>
+
+    <input type="text" id="name" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Senha" required><br>
+
+    <button type="button" class="blue" onclick="postUser()">Cadastrar-se</button>
+    <a href="login.html">Já possui uma conta?</a>
+</form>
+
+<script src="./src/js/script.js"></script>
+</body>
+
+</html>
